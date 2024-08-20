@@ -4,28 +4,135 @@
   box-sizing: border-box;
   outline: 0px;
   border: 0px;
+  transition: 0.2s;
 }
-  
 body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   font-family: 'Arial', sans-serif;
   color: #333;
-  background-color: #f5f5f5;
+  background-color: #9e711e5d;
+  min-height: 100vh;
 }
-
 header {
   background-color: #333;
-  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
 }
-
+.logo{
+  color: #ffff;
+  font-size: 1.3rem;
+  padding: 5px 10px;
+  text-align: start;
+}
 header nav{
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+@media only screen and (max-width: 778px) {
+  header nav{
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: #333;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 0px;
+  }
+  nav button{
+    width: 150px;
+    justify-content: end;
+  }
+}
 nav button{
-  margin: 0 15px;
-  padding: 20px;
-  color: #000000;
+  display: flex;
+  margin: 2px 15px;
+  padding: 15px;
+  color: #333;
   font-weight: bold;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+nav button:hover{
+  background-color: rgb(119, 105, 43);
+  color: #ffff;
+}
+nav button:focus{
+  background-color: rgb(155, 76, 19);
+  color: #ffff;
+}
+main{
+  margin: 5px 10px;
+  padding: 10px;
+  min-height: 72vh;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+.hero-content h1{
+  text-align: center;
+  margin: 40px 10px;
+  font-size: 2rem;
+  background:none ;
+}
+.hero-content{
+  padding: 10px;
+  text-align: center;
+}
+.hero-content p{
+  font-size: 1.2rem;
+}
+.intro{
+  padding: 10px;
+  text-align: center;
+}
+.intro h2{
+  text-align: center;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+.intro p{
+  font-size: 1.2rem;
+}
+.intro .btn{
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  border: 0px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 200px;
+  background-color: #333;
+  color: #ffff;
+}
+.intro .btn:hover{
+  background-color: rgb(119, 105, 43);
+  color: #ffff;
+  border: 0px;
+}
+.intro .btn:focus{
+  background-color: rgb(155, 76, 19);
+  color: #ffff;
+}
+footer{
+  display: block;
+  background-color: #333;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin:10px;
+}
+footer p{
+  color: #ffff;
 }
