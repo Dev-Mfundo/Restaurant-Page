@@ -2,7 +2,7 @@ import "./styles.css";
 import header from "./components/header";
 import footer from "./components/footer";
 import home from "./components/home";
-import menu from "./menu";
+import menu from "./components/menu";
 import about from "./components/about";
 import contact from "./components/contact";
 
