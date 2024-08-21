@@ -14,7 +14,8 @@ const App = (() => {
     const aboutBtn = document.getElementById("about");
     const menuBtn = document.getElementById("menu");
     const contactBtn = document.getElementById("contact");
-    const mainBody = document.querySelector("main");
+    const mainBody = document.createElement("main");
+    document.body.appendChild(mainBody);
     const togglebtn = document.getElementById("navbarToggle");
 
     togglebtn.addEventListener("click", function() {
