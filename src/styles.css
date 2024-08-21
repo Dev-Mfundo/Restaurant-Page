@@ -55,6 +55,13 @@ header .navbar{
   display: flex;
   flex-direction: row;
 }
+@media only screen and (min-width: 779px) {
+  header .navbar{
+    position: relative;
+    right: 6%;
+  }
+
+}
 @media only screen and (max-width: 778px) {
   #navbarToggle{
     display: block;
@@ -250,6 +257,8 @@ main{
 }
 
 .contact-form button {
+  display: block;
+  margin: 0 auto;
   padding: 10px 20px;
   background-color: #333;
   color: white;
@@ -258,9 +267,17 @@ main{
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
+.contact-form h2{
+  color:#e9e5df;
+  text-align: center;
+}
 .contact-form button:hover {
-  background-color: #555;
+  background-color: rgb(119, 105, 43);
+  color: #ffff;
+}
+.contact-form button:focus{
+  background-color: rgb(155, 76, 19);
+  color: #ffff;
 }
 footer{
   order: 3;
