@@ -9,18 +9,28 @@ import contact from "./components/contact";
 const App = (() => {
     header();
     footer();
-
+    
     const homeBtn = document.getElementById("home");
     const aboutBtn = document.getElementById("about");
     const menuBtn = document.getElementById("menu");
     const contactBtn = document.getElementById("contact");
     const mainBody = document.querySelector("main");
+    const togglebtn = document.getElementById("navbarToggle");
+    const navbar = document.getElementsByClassName(".navbar");
+
+    toggleBtn.addEventListener("click", function(){
+        if((navbar.style.display)==none){
+            navbar.style.display=flex;
+        }else{
+            navbar.style.display=none;
+        }
+    })
 
     function showContent(mainContent) {
         mainBody.innerHTML = "";
-        setTimeout(() => {
+        (() => {
             mainBody.appendChild(mainContent);
-        }, 200); 
+        })(); 
     }
 
     homeBtn.addEventListener("click", function() {

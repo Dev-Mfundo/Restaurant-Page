@@ -14,15 +14,6 @@ export default function homePage() {
     firstParagraph.innerHTML = "We bring the authenticity and diversity of African cuisine to the heart of the city, offering an unforgettable dining experience that combines modern elegance with traditional African hospitality.";
     divOne.appendChild(firstParagraph);
 
-    const imagesContainer = document.createElement("div");
-    imagesContainer.className = "hero-images";
-    for (let i = 1; i <= 3; i++) {
-        const img = document.createElement("img");
-        img.src = `./assets/image${i}.jpg`; // Add the paths to your images
-        imagesContainer.appendChild(img);
-    }
-    divOne.appendChild(imagesContainer);
-
     const sectionTwo = document.createElement("section");
     sectionTwo.className = "intro";
     const secondHeading = document.createElement("h2");
@@ -33,12 +24,11 @@ export default function homePage() {
     secondParagraph.innerHTML = "Immerse yourself in the vibrant flavors and rich culture of Africa.";
     sectionTwo.appendChild(secondParagraph);
     
-    const aTag = document.createElement("a");
-    aTag.href = "#menu";
-    aTag.className = "btn";
-    aTag.id = "linkMenu";
-    aTag.innerHTML = "Explore Our Menu";
-    sectionTwo.appendChild(aTag);
+    const pTag = document.createElement("p");
+    pTag.className = "btn";
+    pTag.id = "linkMenu";
+    pTag.innerHTML = "Explore Our Menu";
+    sectionTwo.appendChild(pTag);
 
     const container = document.createElement("div");
     container.appendChild(sectionOne);

@@ -1,3 +1,5 @@
+import august from "../mvdh.jpg";
+
 export default function about() {
     const sectionOne = document.createElement("section");
     sectionOne.className = "hero";
@@ -15,7 +17,7 @@ export default function about() {
     divOne.appendChild(firstParagraph);
 
     const img = document.createElement("img");
-    img.src = "./assets/about-us.jpg";
+    img.src = august;
     img.className = "about-image";
     sectionOne.appendChild(img);
 
