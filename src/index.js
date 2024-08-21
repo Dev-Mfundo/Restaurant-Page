@@ -16,13 +16,13 @@ const App = (() => {
     const contactBtn = document.getElementById("contact");
     const mainBody = document.querySelector("main");
     const togglebtn = document.getElementById("navbarToggle");
-    const navbar = document.getElementsByClassName(".navbar");
 
-    toggleBtn.addEventListener("click", function(){
-        if((navbar.style.display)==none){
-            navbar.style.display=flex;
+    togglebtn.addEventListener("click", function(){
+        console.log("Here");
+        if((document.getElementsByClassName("navbar").style.display)==none){
+            document.getElementsByClassName("navbar").style.display=flex;
         }else{
-            navbar.style.display=none;
+            document.getElementsByClassName("navbar").style.display=none;
         }
     })
 
