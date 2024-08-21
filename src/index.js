@@ -17,14 +17,16 @@ const App = (() => {
     const mainBody = document.querySelector("main");
     const togglebtn = document.getElementById("navbarToggle");
 
-    togglebtn.addEventListener("click", function(){
-        console.log("Here");
-        if((document.getElementsByClassName("navbar").style.display)==none){
-            document.getElementsByClassName("navbar").style.display=flex;
-        }else{
-            document.getElementsByClassName("navbar").style.display=none;
+    togglebtn.addEventListener("click", function() {
+        const navbar = document.getElementsByClassName("navbar")[0];
+        
+        if (navbar.style.display === "none" || navbar.style.display === "") {
+            navbar.style.display = "flex";
+        } else {
+            navbar.style.display = "none";
         }
-    })
+    });
+    
 
     function showContent(mainContent) {
         mainBody.innerHTML = "";
